@@ -7,13 +7,14 @@ const propTypes = {
 
 const defaultProps = {
     styles: {
-        label: {
-            fontFamily: 'Comic Sans MS',
-            color: 'green'
+        wrapper: {
+            position: "relative"
         },
-        input: {
-            background: '#ddd',
-            border: '1px solid red'
+        side1: {},
+        side2: {
+            position: "absolute",
+            left:0,
+            top:0
         }
     }
 }
@@ -22,9 +23,9 @@ const Comparison = () => {
     const {styles} = this.props || {};
 
     return (
-        <div>
-            <label style={styles.label}>{this.props.label}</label>
-            <input type="text" style={styles.input} onChange={this.handleChange} />
+        <div style={styles.wrapper}>
+            <div style={styles.side1}>comparison 1</div>
+            <div style={styles.side2}>comparison 2</div>
         </div>
     );
 }

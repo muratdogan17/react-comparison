@@ -1,7 +1,7 @@
 {
   "author": "Murat Doğan <muratdogan@yahoo.com> (https://medium.com/@muratdogan)",
   "name": "react-comparison",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the package provides you to compare two elements, especially media (Images, videos, etc.)",
   "private": false,
   "main": "./lib/Comparison.js",
