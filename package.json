@@ -1,0 +1,40 @@
+{
+  "author": "Murat Doğan <muratdogan@yahoo.com> (https://medium.com/@muratdogan)",
+  "name": "react-comparison",
+  "version": "1.0.0",
+  "description": "This is the package provides you to compare two elements, especially media (Images, videos, etc.)",
+  "private": false,
+  "main": "./lib/Comparison.js",
+  "license": "MIT",
+  "keywords": ["react-comparison","comparison","compare","before-after","before","after"],
+  "homepage": "https://github.com/muratdogan17/react-comparison",
+  "bugs": {
+    "url": "https://github.com/muratdogan17/react-comparison/issues",
+    "email": "muratdogan@yahoo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muratdogan17/react-comparison.git"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
