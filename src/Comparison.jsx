@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-    label: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired,
     styles: PropTypes.object
 }
 
@@ -20,29 +18,18 @@ const defaultProps = {
     }
 }
 
-class BoilerplateComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleChange = this.handleChange.bind(this);
-    }
+const Comparison = () => {
+    const {styles} = this.props || {};
 
-    handleChange(e) {
-        this.props.onChange(e.target.value);
-    }
-
-    render() {
-        const styles = this.props.styles || {};
-
-        return (
-            <div>
-                <label style={styles.label}>{this.props.label}</label>
-                <input type="text" style={styles.input} onChange={this.handleChange} />
-            </div>
-        );
-    }
+    return (
+        <div>
+            <label style={styles.label}>{this.props.label}</label>
+            <input type="text" style={styles.input} onChange={this.handleChange} />
+        </div>
+    );
 }
 
-BoilerplateComponent.propTypes = propTypes;
-BoilerplateComponent.defaultProps = defaultProps;
+Comparison.propTypes = propTypes;
+Comparison.defaultProps = defaultProps;
 
-export default BoilerplateComponent;
+export default Comparison;
