@@ -1,3 +1,4 @@
+## NOTE: This is not a production ready package, it's working in progress
 #React Comparison
 <p align="center">
 <a href="https://www.npmjs.com/package/react-comparison">
